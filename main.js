@@ -366,6 +366,32 @@ document.addEventListener('DOMContentLoaded', () => {
         { label: "Diffusion", val: "QRD 2D Quadratic" },
         { label: "Low End", val: "Membrane Traps" }
       ]
+    },
+    {
+      id: "outboard",
+      name: "Teletronix LA-2A & Tube-Tech CL 1B",
+      category: "Analog Outboard Dynamics",
+      image: "images/equip_outboard.jpg",
+      description: "Legendary optical and opto-tube compression stages that glue vocals and bass lines seamlessly into the mix with timeless musical harmonic saturation.",
+      specs: [
+        { label: "Topology", val: "Optical / Tube" },
+        { label: "Gain Reduction", val: "Up to 40 dB" },
+        { label: "Frequency Resp", val: "20Hz - 20kHz" },
+        { label: "Attack Time", val: "10ms / Adjustable" }
+      ]
+    },
+    {
+      id: "amps",
+      name: "Vintage Marshall JCM800 & Fender Twin",
+      category: "Backline & Tube Amplifiers",
+      image: "images/equip_amps.jpg",
+      description: "Iconic hand-wired guitar heads and pristine clean combos paired with an isolated load box cabinet and direct acoustic mic array for recording true analog tone.",
+      specs: [
+        { label: "Power Section", val: "50W / 100W Tube" },
+        { label: "Preamp Tubes", val: "12AX7 / ECC83" },
+        { label: "Speakers", val: "Celestion Vintage 30" },
+        { label: "Load Box", val: "Two Notes Torpedo" }
+      ]
     }
   ];
 

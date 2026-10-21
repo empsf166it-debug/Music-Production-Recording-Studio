@@ -175,6 +175,7 @@ input:focus, select:focus, textarea:focus {
   justify-content: center;
   gap: 0.625rem;
   padding: 0.875rem 1.75rem;
+  min-width: 11.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -196,6 +197,7 @@ input:focus, select:focus, textarea:focus {
   justify-content: center;
   gap: 0.625rem;
   padding: 0.875rem 1.75rem;
+  min-width: 11.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.25rem;
