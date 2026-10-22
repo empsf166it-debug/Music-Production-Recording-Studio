@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-midnight: #0B0B10;
-  --color-charcoal: #17171F;
+  --color-midnight: #12131A;
+  --color-charcoal: #1A1C26;
   --color-violet: #8B5CF6;
   --color-cyan: #45E6E0;
   --color-soft-white: #F5F5F7;
@@ -20,7 +20,7 @@ html, body {
 html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #0B0B10;
+  background-color: #12131A;
   color: #F5F5F7;
 }
 
@@ -39,10 +39,10 @@ main {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B0B10;
+  background: #12131A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #232332;
+  background: #2D3142;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -51,10 +51,10 @@ main {
 
 /* Glassmorphism surfaces */
 .glass-panel {
-  background: rgba(23, 23, 31, 0.7);
+  background: rgba(26, 28, 38, 0.78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-panel-hover {
@@ -165,7 +165,7 @@ input:focus, select:focus, textarea:focus {
 
 /* Radial spotlight background */
 .radial-bg {
-  background: radial-gradient(circle at 50% 20%, rgba(139, 92, 246, 0.12) 0%, rgba(11, 11, 16, 0) 70%);
+  background: radial-gradient(circle at 50% 20%, rgba(139, 92, 246, 0.16) 0%, rgba(18, 19, 26, 0) 70%);
 }
 
 /* Unified CTA Button Sizing across all devices & views */
@@ -202,9 +202,9 @@ input:focus, select:focus, textarea:focus {
   font-weight: 600;
   line-height: 1.25rem;
   border-radius: 9999px;
-  background: rgba(23, 23, 31, 0.85);
+  background: rgba(26, 28, 38, 0.85);
   color: #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(12px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
@@ -227,4 +227,25 @@ input:focus, select:focus, textarea:focus {
   line-height: 1.25rem;
   border-radius: 9999px;
   white-space: nowrap;
+}
+
+/* Ensure single line for all CTA buttons and booking buttons on mobile */
+#booking-form button[type="submit"] {
+  white-space: nowrap !important;
+}
+
+@media (max-width: 480px) {
+  #booking-form button[type="submit"] {
+    font-size: 0.875rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #booking-form button[type="submit"] {
+    font-size: 0.8125rem !important;
+    letter-spacing: -0.01em;
+    gap: 0.375rem !important;
+  }
 }
